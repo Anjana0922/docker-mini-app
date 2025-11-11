@@ -3,7 +3,7 @@ import React,{useEffect, useState} from "react";
 function App() {
   const [message, setmessage] = useState();
   useEffect(()=>{
-    fetch("https://docker-mini-app-uisc.onrender.com/api/hello" )
+    fetch("https://docker-mini-app-backend-zbtr.onrender.com/api/hello" )
     .then(res => res.json())
     .then(data => setmessage(data.message));
   },[]);
